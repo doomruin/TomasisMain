@@ -4,13 +4,15 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.struts2.ServletActionContext;
 
 
 import com.opensymphony.xwork2.ActionSupport;
+
+import javax.servlet.http.HttpServletResponse;
+
 /**
  *本类封装了三种向前台输出json数据的方法，下面按优先级排列
  * 1、逻辑成功，使用jsonOutput(Object object)输出数据

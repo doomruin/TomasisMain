@@ -1,12 +1,13 @@
 package com.tomasis.infrastructure.dao;
 
-import org.springframework.stereotype.Repository;
+import com.tomasis.core.model.TestInfo;
+import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 
-import com.tomasis.common.BaseDao;
-
-@Repository("testDao")
-public class TestDaoImpl extends BaseDao implements TestDao{
-	
-	
-	
+/**
+ * Created by Dreamwalker on 2014/12/30.
+ */
+public class TestDaoImpl extends SqlMapClientDaoSupport implements TestDao{
+    public TestInfo findById(int id) {
+        return (TestInfo)getSqlMapClientTemplate().queryForObject("findById");
+    }
 }

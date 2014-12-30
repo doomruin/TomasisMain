@@ -4,5 +4,6 @@ import java.util.Map;
 
 
 public interface TestService {
+    public void say();
 	
 }

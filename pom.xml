@@ -16,6 +16,7 @@
 		<struts.d.javassist>3.12.1.GA</struts.d.javassist>
 		<spring.version>3.2.3.RELEASE</spring.version>
 		<ibatis.version>2.0.8</ibatis.version>
+        <jdbc.version>5.1.18</jdbc.version>
 		<junit.version>4.8.2</junit.version>
 	</properties>
 	
@@ -89,6 +90,12 @@
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-context</artifactId>-->
+            <!--<version>${spring.version}</version>-->
+        <!--</dependency>-->
+
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -96,23 +103,24 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-		<!-- ibatis依赖包 -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-ibatis</artifactId>
-			<version>${ibatis.version}</version>
-		</dependency>
+		<!-- 持久化依赖包 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-ibatis</artifactId>
+            <version>${ibatis.version}</version>
+        </dependency>
 
-		<dependency>
-			<groupId>org.apache.ibatis</groupId>
-			<artifactId>ibatis-sqlmap</artifactId>
-			<version>2.3.4.726</version>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.14</version>
-		</dependency>
+        <dependency>
+            <groupId>org.apache.ibatis</groupId>
+            <artifactId>ibatis-sqlmap</artifactId>
+            <version>2.3.4.726</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${jdbc.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>

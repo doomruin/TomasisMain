@@ -13,6 +13,8 @@
     <!-- 打开开发者模式，暴露更多调试信息 -->
     <constant name="struts.devMode" value="true"/>
 
+    <include file="config/struts/struts-*.xml"/>
+
     <package name="tomasis" abstract="true" extends="struts-default">
         <!--<interceptors>-->
         <!--<interceptor name="audit"-->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap
+        PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN"
+        "http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap >
+    <typeAlias alias="info"
+               type="com.tomasis.core.model.TestInfo"/>
+
+    <resultMap id="infoResult" class="info">
+        <result column="testid" property="id"/>
+        <result column="name" property="name"/>
+
+    </resultMap>
+    <!-- findById必须和接口中的方法名一样  返回一个User  就是刚才的别名  如果不弄别名要连类路径一起写 麻烦-->
+    <select id="findById"  resultMap="infoResult">
+        select
+        * from test where testid=1
+    </select>
+
+
+</sqlMap>
