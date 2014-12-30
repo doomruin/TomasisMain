@@ -23,8 +23,8 @@ public class TestAction extends BaseAction{
 
 
 	public String execute(){
-		//»ù±¾²ÎÊý
-		String format = RequestUtil.getString(request, "test", "JSON");
+		//ï¿½ï¿½ï¿½ï¿½ï¿½
+		//String format = RequestUtil.getString(request, "test", "JSON");
 		
 		return NONE;
 	}
