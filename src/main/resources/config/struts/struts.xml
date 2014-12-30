@@ -13,15 +13,25 @@
     <!-- 打开开发者模式，暴露更多调试信息 -->
     <constant name="struts.devMode" value="true"/>
 
-    <package name="search" namespace="/search" extends="struts-default">
+    <package name="tomasis" abstract="true" extends="struts-default">
+        <!--<interceptors>-->
+        <!--<interceptor name="audit"-->
+        <!--class="com.dianping.ba.base.permission.web.web.intercepter.AuditIntercepter" />-->
+        <!--<interceptor-stack name="auditStack">-->
+        <!--<interceptor-ref name="defaultStack" />-->
+        <!--<interceptor-ref name="audit" />-->
+        <!--</interceptor-stack>-->
+        <!--</interceptors>-->
+        <!--<default-interceptor-ref name="auditStack" />-->
 
-        <!--获取角色信息 -->
-        <action name="test"
-                class="com.tomasis.core.action.TestAction"
-                method="test">
-        </action>
-
+        <!--<global-results>-->
+        <!--<result name="errorMsg">/errorMsg.jsp</result>-->
+        <!--</global-results>-->
+        <!--<global-exception-mappings>-->
+        <!--<exception-mapping result="errorMsg" exception="java.lang.Exception"></exception-mapping>-->
+        <!--</global-exception-mappings>-->
     </package>
+
 
 
 
