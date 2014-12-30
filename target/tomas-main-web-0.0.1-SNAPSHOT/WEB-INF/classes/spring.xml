@@ -23,7 +23,7 @@
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
-				<value>classpath:config/jdbc.properties</value>
+				<value>classpath:config/ibatis/jdbc.properties</value>
 			</list>
 		</property>
 	</bean>
@@ -50,7 +50,7 @@
 	<!-- spring的ibatis 配制 -->
 	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
 		<property name="configLocation">
-			<value>classpath:config/sqlMap.xml</value>
+			<value>classpath:config/ibatis/sqlMap.xml</value>
 		</property>
 		<property name="dataSource" ref="dataSource" />
 	</bean>
