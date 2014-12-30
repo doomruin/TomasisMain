@@ -2,12 +2,7 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" 
 		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-	
-	<display-name>sdg-api</display-name>
-	
-	<session-config>
-		<session-timeout>-1</session-timeout>
-	</session-config>
+
 	
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
@@ -30,9 +25,20 @@
             <param-value>struts-default.xml,struts-plugin.xml,config/struts/struts.xml</param-value>
         </init-param>
     </filter>
+    <filter>
+        <filter-name>struts-execute</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsExecuteFilter</filter-class>
+    </filter>
 
     <filter-mapping>
         <filter-name>struts-prepare</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>struts-execute</filter-name>
         <url-pattern>/*</url-pattern>
         <dispatcher>REQUEST</dispatcher>
         <dispatcher>FORWARD</dispatcher>

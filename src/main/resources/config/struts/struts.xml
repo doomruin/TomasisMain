@@ -11,7 +11,7 @@
     <!-- struts.xml 改动后，重新加载 -->
     <constant name="struts.configuration.xml.reload" value="true"/>
     <!-- 打开开发者模式，暴露更多调试信息 -->
-    <constant name="struts.devMode" value="false"/>
+    <constant name="struts.devMode" value="true"/>
 
     <package name="search" namespace="/search" extends="struts-default">
 
