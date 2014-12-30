@@ -1,16 +1,16 @@
-package com.test.api.core.action;
+package com.tomasis.core.action;
 
 
 import javax.annotation.Resource;
 
+import com.tomasis.core.service.TestService;
 import org.springframework.stereotype.Controller;
 
-import com.test.api.common.action.BaseAction;
-import com.test.api.common.util.RequestUtil;
-import com.test.api.core.service.TestService;
+import com.tomasis.common.BaseAction;
 
 
-@Controller
+
+
 public class TestAction extends BaseAction{
 	
 	
@@ -22,11 +22,8 @@ public class TestAction extends BaseAction{
 	}
 
 
-	public String execute(){
-		//�����
-		//String format = RequestUtil.getString(request, "test", "JSON");
-		
-		return NONE;
+	public String test(){
+		return output("hello ! you succeed");
 	}
 	
 }

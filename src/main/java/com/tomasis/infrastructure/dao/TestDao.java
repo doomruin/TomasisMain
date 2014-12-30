@@ -1,4 +1,4 @@
-package com.test.api.core.dao;
+package com.tomasis.infrastructure.dao;
 
 import java.util.Map;
 

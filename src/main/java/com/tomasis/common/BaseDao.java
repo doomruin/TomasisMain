@@ -1,14 +1,14 @@
-package com.test.api.common.dao;
+package com.tomasis.common;
 
 import org.springframework.orm.ibatis.support.SqlMapClientDaoSupport;
 
 public abstract class BaseDao extends SqlMapClientDaoSupport {
 	
 	/**
-	 * »ñÈ¡¶ÔÏó
+	 * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
 	 * 
-	 * @param id ÅäÖÃÔÚxmlÖĞµÄÓï¾äID
-	 * @param paramObject ´«µİµÄ²ÎÊı
+	 * @param id ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xmlï¿½Ğµï¿½ï¿½ï¿½ï¿½ID
+	 * @param paramObject ï¿½ï¿½ï¿½İµÄ²ï¿½ï¿½ï¿½
 	 * @return
 	 */
 	protected Object getObject(String id, Object paramObject){

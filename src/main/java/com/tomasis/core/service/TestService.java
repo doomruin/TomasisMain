@@ -1,4 +1,4 @@
-package com.test.api.core.service;
+package com.tomasis.core.service;
 
 import java.util.Map;
 

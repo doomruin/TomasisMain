@@ -16,7 +16,7 @@
 	
 	<!-- 组件扫描  start-->
 	<context:annotation-config/>
-	<context:component-scan base-package="com.test.core"/>
+	<context:component-scan base-package="com.tomasis"/>
 	
 	<!-- 读取*.properties配置信息 -->
 	<bean id="propertyConfigurer"

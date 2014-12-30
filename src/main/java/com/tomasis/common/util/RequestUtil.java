@@ -1,4 +1,4 @@
-package com.test.api.common.util;
+package com.tomasis.common.util;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.UnsupportedEncodingException;

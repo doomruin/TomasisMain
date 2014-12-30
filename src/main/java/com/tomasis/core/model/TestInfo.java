@@ -1,4 +1,4 @@
-package com.test.api.core.model;
+package com.tomasis.core.model;
 
 public class TestInfo {
 

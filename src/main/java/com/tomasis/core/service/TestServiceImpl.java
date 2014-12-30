@@ -1,5 +1,4 @@
-package com.test.api.core.service;
-
+package com.tomasis.core.service;
 import org.springframework.stereotype.Service;
 
 
