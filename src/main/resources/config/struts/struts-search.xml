@@ -11,5 +11,11 @@
                 method="test">
         </action>
 
+        <!--获取角色信息 -->
+        <action name="video"
+                class="com.tomasis.core.action.SearchAction"
+                method="searchForVideo">
+        </action>
+
     </package>
 </struts>
